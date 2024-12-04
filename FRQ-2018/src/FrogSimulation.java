@@ -14,7 +14,7 @@ public class FrogSimulation {
 			
 			maxHops = maxHops-1;
 		}
-		return total;
+		
 	}
 	public boolean simulate() {
 		if(hopDistance() >= goalDistance) {
