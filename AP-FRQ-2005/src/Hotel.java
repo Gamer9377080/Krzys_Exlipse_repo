@@ -23,7 +23,13 @@ public class Hotel {
        
    }
    public Reservation cancelAndReassign(Reservation res) {
-	   rooms[res.getRoomNumber()]=null;
-	   return null;
+	   int roomNum = res.getRoomNumber();
+	   if(waitList.isEmpty()) {
+		   rooms[roomNum]=null;
+	   }else {
+		   rooms[roomNum]=new Reservation((String)waitList.get(0), roomNum);
+		   waitList.remove(0);
+	   }
+	   return rooms[roomNum];
    }
 }
