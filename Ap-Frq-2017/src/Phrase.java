@@ -6,7 +6,6 @@ public class Phrase {
 		this.currentPhrase = p;
 	}
 	public int findNthOccittence(String str, int n) {
-		int index = -1;
         int count = 0;
 
         for (int i = 0; i <= currentPhrase.length() - str.length(); i++) {
@@ -20,7 +19,6 @@ public class Phrase {
         return -1;
 	}
 	public void replasceNthOccerence(String str, int n, String repl) {
-		int index = -1;
 	    int count = 0;
 
 	    for (int i = 0; i <= currentPhrase.length() - str.length(); i++) {
