@@ -23,7 +23,11 @@ public class selectionSort {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+		Integer[] num = {7, 12, 5, 8, 3, 6};
+		selectionSort(num, num.length);
+		for(Integer i:num) {
+			System.out.print(i+" ");
+		}
 	}
 
 }
