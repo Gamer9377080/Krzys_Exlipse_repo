@@ -1,14 +1,14 @@
 
 public class exercise13_3 {
 	public static void selectionSort(Integer[] item, int size) {
-		for (int k = size-1; k > 0; k++)
-			swapMinToFront(item, k, size - 1);
+		for (int k = size-1; k > 0; k--)
+			swapLargeToBack(item, k, 0);
 	} // =======================
 
-	private static void swapMinToFront(Integer[] item, int start, int end) {
+	private static void swapLargeToBack(Integer[] item, int start, int end) {
 		int indexLargest = start;
-		for (int k = start + 1; k <= end; k++) {
-			if (item[k].compareTo(item[indexLargest]) < 0)
+		for (int k = start - 1; k >= end; k--) {
+			if (item[k].compareTo(item[indexLargest]) > 0)
 				indexLargest = k;
 		}
 		Integer saved = item[start];
