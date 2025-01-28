@@ -8,6 +8,7 @@ public class Hotel {
    //int[] data = new int[5]
    public Hotel(int r) {
        rooms = new Reservation[r];
+       waitList = new ArrayList<String>();
    }
    
    public Reservation requestRoom(String guestName) {
@@ -33,3 +34,13 @@ public class Hotel {
 	   return rooms[roomNum];
    }
 }
+	public Reservation[] getReservations() {
+		return rooms;
+		
+	}
+	public void printWaitList() {
+		for(int w = 0; w<waitList.size; w++) {
+			System.out.print(waitList.get(w)+" ");
+		}
+		
+	}
