@@ -33,14 +33,14 @@ public class Hotel {
 	   }
 	   return rooms[roomNum];
    }
+    public Reservation[] getReservations() {
+        return rooms;
+    
+    }
+    public void printWaitList() {
+        for(int w = 0; w<waitList.size(); w++) {
+            System.out.print(waitList.get(w)+" ");
+        }
+    }
 }
-	public Reservation[] getReservations() {
-		return rooms;
-		
-	}
-	public void printWaitList() {
-		for(int w = 0; w<waitList.size; w++) {
-			System.out.print(waitList.get(w)+" ");
-		}
-		
-	}
+	
