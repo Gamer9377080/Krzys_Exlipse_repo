@@ -1,4 +1,4 @@
-public class Chortle {
+public class Chortle1 {
 	public static void main(String[] args) {
 		int[][] data = { {3, 2, 5},
                 		 {1, 4, 4, 8, 13},
